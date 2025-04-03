@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiUnitConverter.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Select conversion:" FontAttributes="Bold" />
+        <Picker x:Name="ConversionPicker"
+                Title="Choose a conversion" />
+
+        <Label Text="Enter value:" FontAttributes="Bold" />
+        <Entry x:Name="InputEntry"
+               Placeholder="Enter value"
+               Keyboard="Numeric" />
+
+        <Button Text="Convert" Clicked="OnConvertClicked" />
+        <Label x:Name="ResultLabel"
+               FontSize="18"
+               TextColor="DarkBlue" />
+
+    </VerticalStackLayout>
+    
+</ContentPage>
